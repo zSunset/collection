@@ -5,8 +5,13 @@ name = "pypi"
 
 [packages]
 requests = "*"
+bs4 = "*"
+lxml = "*"
+fake-useragent = "*"
+pymongo = {extras = ["srv"], version = "*"}
+python-bsonjs = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "3.11"
