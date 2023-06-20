@@ -10,6 +10,7 @@ lxml = "*"
 fake-useragent = "*"
 pymongo = {extras = ["srv"], version = "*"}
 python-bsonjs = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
