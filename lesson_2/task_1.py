@@ -2,10 +2,15 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+from dotenv import load_dotenv
+import os
 import requests
 
+load_dotenv()
+LOGIN_MDB = os.getenv('LOGIN_MDB')
+PASSWORD_MDB = os.getenv('PASSWORD_MDB')
 
-uri = "mongodb+srv://stavropolip:stavropolip@cluster0.dqkosbc.mongodb.net/"
+uri = f"mongodb+srv://{LOGIN_MDB}:{PASSWORD_MDB}@cluster0.dqkosbc.mongodb.net/"
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
 # Send a ping to confirm a successful connection
