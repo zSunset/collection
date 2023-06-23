@@ -11,6 +11,8 @@ fake-useragent = "*"
 pymongo = {extras = ["srv"], version = "*"}
 python-bsonjs = "*"
 python-dotenv = "*"
+selenium = "*"
+selenium-stealth = "*"
 
 [dev-packages]
 
